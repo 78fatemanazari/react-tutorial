@@ -1,2 +1,6 @@
-const InputTodo = () => <div>input field here...</div>;
+const InputTodo = () => (
+  <div>
+    <input type="text" />
+  </div>
+);
 export default InputTodo;

@@ -1,5 +1,4 @@
 import InputTodo from './InputTodo';
-import TodosList from './TodosList';
 
 const TodosLogic = () => {
   const todos = [
@@ -23,8 +22,7 @@ const TodosLogic = () => {
   return (
     <div>
       <InputTodo />
-      <TodosList todosProps={todos} />
-      <ul>
+      <ul className="todos-container">
         {todos.map((todo) => (
           <li key={todo.id}>
             {todo.title}
